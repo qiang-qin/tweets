@@ -3,8 +3,14 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                input "Does the staging environment look ok?"
+                sh 'echo "hello world"'
             }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: '/tmp/pipeline_test/pipeline.jar', fingerprint: true
+            junit '/tmp/pipeline_test/pipeline_journal.xml'
         }
     }
 }
