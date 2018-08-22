@@ -10,7 +10,7 @@ pipeline {
     }
     post {
         always {
-            junit '/Users/Shared/Jenkins/Home/workspace/single_pipeline/pipeline_journal.xml'
+            junit '/Users/Shared/Jenkins/Home/workspace/single_pipeline/Tests/pipeline_journal.xml'
         }
     }
 }
