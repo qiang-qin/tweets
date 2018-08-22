@@ -9,7 +9,6 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: '/tmp/pipeline_test/pipeline.jar', fingerprint: true
             junit '/tmp/pipeline_test/pipeline_journal.xml'
         }
     }
