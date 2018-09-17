@@ -8,9 +8,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            junit 'single_pipeline/target/test-reports/*.xml'
-        }
-    }
 }
