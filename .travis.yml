@@ -1,4 +1,4 @@
-language: python
-sudo: required
-before_install: sudo pip install jieba
-script: test.sh
+language: ruby
+rvm:
+ - 2.2
+ - jruby
