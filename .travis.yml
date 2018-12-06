@@ -1,2 +1,4 @@
-language: python
-script: true
+language: ruby
+rvm:
+ - 2.2
+ - jruby
